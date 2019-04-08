@@ -55,10 +55,6 @@ export class LessonsComponent implements OnInit {
         })
         .catch(err => console.error("Could not subscribe to notifications", err));
 
-        this.swPush.notificationClicks.subscribe((result) => {
-          console.log('clicked', result);
-        });
-
     }
 
 
